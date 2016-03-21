@@ -1,8 +1,10 @@
 /// <reference path="to-do-classes-interfaces.ts" />
 /// <reference path="to-do-people.ts" />
+/// <reference path="to-do-priority.ts" />
 /// <reference path="to-do-listing-function.ts" />
 
 var people = ToDoList.people;
+var taskpriority = ToDoList.taskpriority;
 
 var tasks = [];
 tasks.push(new ToDoList.HomeTask("Do the dishes.", "High"));
@@ -36,3 +38,9 @@ for(var task of thorTasks){
 
 var HobbyTasks =
 ToDoList.getHobbyTasks(tasks);
+
+var HomeTasks = ToDoList.getHomeTasks(tasks);
+
+var WorkTasks = ToDoList.getWorkTasks(tasks);
+
+var LowPriorty = ToDoList.lowPriorityTasks(taskpriority.low, tasks);

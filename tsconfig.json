@@ -9,6 +9,7 @@
     "app/to-do-classes-interfaces.ts",
     "app/to-do-people.ts",
     "app/to-do-listing-function.ts",
-    "app/to_do_list.ts"
+    "app/to_do_list.ts",
+    "app/to-do-priority.ts"
   ]
 }
