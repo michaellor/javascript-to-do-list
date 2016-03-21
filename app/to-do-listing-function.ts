@@ -8,16 +8,20 @@ module ToDoList {
         descriptions.push(task.description);
       }
     }
+
     return descriptions;
   }
 
-  export var HobbyTasks = function(taskCollection: Task[]): String[] {
+  export var getHobbyTasks = function(taskCollection: Task[]): String[] {
     var descriptions: String[] = [];
     for(var task of taskCollection){
-      if(HobbyTask) {
+      if((task.constructor.name) === "HobbyTask") {
         descriptions.push(task.description);
       }
-    }return descriptions;
+    }
+      console.log(descriptions);
+    return descriptions;
   }
+
 
 }

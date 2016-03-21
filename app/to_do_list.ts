@@ -1,4 +1,7 @@
 
 $(document).ready (function(){
-  $('#results').append(tasks);
+  for(var i = 0; i < HobbyTasks.length; i++) {
+    $('#results').append("<li>" + HobbyTasks[i] + "</li>");
+  }
+
 });

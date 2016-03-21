@@ -26,14 +26,13 @@ tasks.push(new ToDoList.WorkTask(tomorrow, "Buy a new shirt.", "Low", people.tho
 tasks.push(new ToDoList.WorkTask(tomorrow, "Buy a new car.", "Low", people.thor));
 tasks.push(new ToDoList.WorkTask(nextDay, "Clean ceiling.", "Low", people.loki));
 
-console.log(tasks);
+// console.log(tasks);
 
 var thorTasks = ToDoList.describeTasksForPerson(people.thor, tasks);
-console.log("Here are Thor's tasks: ");
+// console.log("Here are Thor's tasks: ");
 for(var task of thorTasks){
-  console.log(task);
+  // console.log(task);
 }
 
-// var HobbyTasks =
-// ToDoList.HobbyTasks(HobbyTask);
-// console.log(HobbyTasks);
+var HobbyTasks =
+ToDoList.getHobbyTasks(tasks);
