@@ -44,3 +44,9 @@ var HomeTasks = ToDoList.getHomeTasks(tasks);
 var WorkTasks = ToDoList.getWorkTasks(tasks);
 
 var LowPriorty = ToDoList.lowPriorityTasks(taskpriority.low, tasks);
+
+var highPriorityName = ToDoList.highPriorityName(people.thor, tasks);
+
+
+
+//

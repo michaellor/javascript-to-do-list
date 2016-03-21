@@ -12,6 +12,22 @@ module ToDoList {
     return descriptions;
   }
 
+  // exports.highPriorityName = function(assignee, priority, taskCollection){
+  //   //stuff
+  //   return ["stuff", "otherstuff", 3, 2];
+  // }
+
+  export var highPriorityName = function(assignee: IPerson, taskCollection: Task[]): String[] {
+    var descriptions: String[] = [];
+    for(var task of taskCollection){
+      if((task.assignedTo === assignee) && (task.priority === "High")){
+        descriptions.push(task.description);
+      }
+    }
+    console.log(descriptions);
+    return descriptions;
+  }
+
   export var lowPriorityTasks = function(priority, taskCollection: Task[]): String[] {
     var descriptions: String[] = [];
     for(var task of taskCollection){

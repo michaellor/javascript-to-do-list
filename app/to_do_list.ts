@@ -16,4 +16,6 @@ $(document).ready (function(){
     $('#lowPriorty').append("<li>" + LowPriorty[i] + "</li>");
   }
 
+  $('#thorHighTask').append("<li>" + highPriorityName[0] + "</li>");
+
 });
